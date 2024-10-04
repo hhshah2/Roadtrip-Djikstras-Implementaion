@@ -1,50 +1,53 @@
-Optimal Roadtrip Path Calculator
+# Optimal Roadtrip Path Calculator
 
-This project includes two Java files, Graph.java and RoadTrip.java, which together implement Dijkstra's algorithm to calculate the optimal road trip path between cities, while also considering various points of interest along the way.
-Overview
+This project includes two Java files, `Graph.java` and `RoadTrip.java`, which together implement Dijkstra's algorithm to calculate the optimal road trip path between cities, while also considering various points of interest along the way.
 
-The provided Java classes (Graph and RoadTrip) are designed to model a graph of cities connected by roads, where each edge represents a road between two cities. The RoadTrip class extends Graph and applies Dijkstra's algorithm to find the shortest path based on various attributes such as distance, time, and attractions. This project can be used to calculate an optimal road trip based on given parameters such as distance and time.
-Features
+## Overview
 
-    Graph Representation: Represents cities as nodes and roads between them as edges.
-    Dijkstra's Algorithm: Utilized to find the shortest path between two cities.
-    Attraction Points: Can incorporate points of interest along the route.
-    Customizable Weights: Each road has attributes such as distance and time, which are used to determine the optimal path.
+The provided Java classes (`Graph` and `RoadTrip`) are designed to model a graph of cities connected by roads, where each edge represents a road between two cities. The `RoadTrip` class extends `Graph` and applies Dijkstra's algorithm to find the shortest path based on various attributes such as distance, time, and attractions. This project can be used to calculate an optimal road trip based on given parameters such as distance and time.
 
-Getting Started
+### Features
+
+- **Graph Representation**: Represents cities as nodes and roads between them as edges.
+- **Dijkstra's Algorithm**: Utilized to find the shortest path between two cities.
+- **Attraction Points**: Can incorporate points of interest along the route.
+- **Customizable Weights**: Each road has attributes such as distance and time, which are used to determine the optimal path.
+
+## Getting Started
 
 To run the project, you'll need to have the following prerequisites:
-Prerequisites
 
-    Java 8 or later installed
-    A code editor (e.g., IntelliJ, VS Code, Eclipse)
-    Road data and attraction data in CSV format
+### Prerequisites
 
-Project Structure
+- Java 8 or later installed
+- A code editor (e.g., IntelliJ, VS Code, Eclipse)
+- Road data and attraction data in CSV format
+
+### Project Structure
 
 The project contains two main files:
 
-    Graph.java: Defines the structure of the graph.
-        Manages nodes and edges.
-        Contains methods to add nodes and edges.
+1. **Graph.java**: Defines the structure of the graph.
+   - Manages nodes and edges.
+   - Contains methods to add nodes and edges.
 
-    RoadTrip.java: Extends the Graph class and calculates the optimal road trip.
-        Parses road and attraction data.
-        Implements Dijkstra's algorithm to find the shortest route.
-        Manages attraction points to be included in the route.
+2. **RoadTrip.java**: Extends the `Graph` class and calculates the optimal road trip.
+   - Parses road and attraction data.
+   - Implements Dijkstra's algorithm to find the shortest route.
+   - Manages attraction points to be included in the route.
 
-Files
+### Files
 
-    Graph.java: Implements the graph and manages nodes and edges.
-    RoadTrip.java: Implements the core functionality of the road trip calculation.
+- `Graph.java`: Implements the graph and manages nodes and edges.
+- `RoadTrip.java`: Implements the core functionality of the road trip calculation.
 
-Usage
-Running the Code
+## Usage
+
+### Running the Code
 
 Compile and run the project using the following commands:
 
-sh
-
+```sh
 javac Graph.java RoadTrip.java
 java RoadTrip <roadFile> <attractionFile>
 
@@ -78,7 +81,7 @@ You can specify the starting city, ending city, and any attractions you want to 
 
 java
 
-List<String> attractiontrips= new ArrayList<>();
+List<String> attractiontrips = new ArrayList<>();
 attractiontrips.add("Alcatraz");
 attractiontrips.add("Niagra Falls");
 attractiontrips.add("Mesa Arch");
